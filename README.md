@@ -13,4 +13,4 @@ Les push effectués sur le github du projet sont directement liés à la platefo
 - Les changements de code appliqués à la branche "preprod" sont déployés sur la preprod.
 
 Avant le déploiement du site, GitHub Actions permet de construire, tester, et réviser le code pour s'assurer du bon fonctionnement de celui-ci.
-Ces différentes étapes sont visibles dans les fichiers "deploy.yml" et "deploy_preprod.yml" (dans le dossier .github/workflows)
+Ces différentes étapes sont visibles dans les fichiers "deploy.yml" et "deploy_preprod.yml" (dans le dossier .github/workflows).
