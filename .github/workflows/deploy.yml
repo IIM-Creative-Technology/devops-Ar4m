@@ -9,7 +9,6 @@ on :
       - master
 
 jobs:
-
   build:
 
     runs-on: ubuntu-latest
@@ -19,8 +18,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Run Super-Linter
-        uses: github/super-linter@v3
+      - name: Run Linter
+        uses: actions/javascript-action@v1
 
       - name: Install dependencies
         run: npm install  # npm ci
