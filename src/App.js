@@ -10,7 +10,7 @@ function App() {
       <header className="App-header">
         <img src={earth} className="App-logo" alt="logo" />
         <p>
-          Site Front Simple
+          Site Front Simple [preprod]
         </p>
         <br/>
         <a
