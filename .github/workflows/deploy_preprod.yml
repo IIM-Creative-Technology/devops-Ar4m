@@ -18,11 +18,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Run Linter
-        uses: actions/javascript-action@v1
-
       - name: Install dependencies
         run: npm install  # npm ci
+
+      - name: Run Linter
+        uses: actions/javascript-action@v1
 
       - name: Run the tests
         run: npm test -- --coverage
@@ -33,4 +33,3 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_KEY}}
           heroku_app_name: ${{secrets.HEROKU_APP_PREPROD}}
           heroku_email: ${{secrets.HEROKU_EMAIL}}
-          
