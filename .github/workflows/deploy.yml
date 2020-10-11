@@ -22,7 +22,7 @@ jobs:
         run: npm install  # npm ci
 
       - name: Run Linter
-        run: eslint . --ext .js,.jsx,.ts,.tsx
+        uses: stefanoeb/eslint-action@1.0.2
 
       - name: Run the tests
         run: npm test -- --coverage
