@@ -19,11 +19,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Run Super-Linter
+        uses: github/super-linter@v3
+
       - name: Install dependencies
-        run: npm install
+        run: npm install  # npm ci
 
       - name: Run the tests
-        run: npm test
+        run: npm test -- --coverage
 
       - name: Deploy to Heroku
         uses: akhileshns/heroku-deploy@v3.5.7
